@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>똑똑</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .fade-out {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+    </style>
+    <script>
+        function navigateToSecondPage() {
+            document.body.classList.add('fade-out');
+            setTimeout(function() {
+                window.location.href = "NaGa.html";
+            }, 500); // 0.5초 후 페이지 이동
+        }
+
+        function navigateToThirdPage() {
+            document.body.classList.add('fade-out');
+            setTimeout(function() {
+                window.location.href = "Thirdpage.html";
+            }, 500); // 0.5초 후 페이지 이동
+        }
+    </script>
+</head>
+<body>
+    <div class="center-container">
+        <div class="content">
+            <p class="message">이주희님이 맞으신가요?</p>
+            <div class="button-container">
+                <button class="center-button button2" onclick="navigateToSecondPage()">NO</button>
+                <button class="center-button button1" onclick="navigateToThirdPage()">YES</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

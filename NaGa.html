@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나가세요</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            background-color: #f8f9fa;
+        }
+
+        .message {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .close-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .close-button:hover {
+            background-color: #c82333;
+        }
+    </style>
+    <script>
+        function redirectToHomePage() {
+            window.location.href = "index.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="message">뭐야 꺼져 그럼</div>
+    <button class="close-button" onclick="redirectToHomePage()">꺼지기</button>
+</body>
+</html>
